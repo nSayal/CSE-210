@@ -6,7 +6,7 @@ public abstract class SmartDevice
     public bool IsOn { get; set; }
     public TimeSpan TimeOn { get; set; }
 
-    // Method to turn on the device
+
     public virtual void TurnOn()
     {
         IsOn = true;

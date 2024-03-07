@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-// Class representing a Room
+
 public class Room
 {
     public string Name { get; set; }
@@ -13,7 +13,7 @@ public class Room
         Devices = new List<SmartDevice>();
     }
 
-    // Method to turn on all devices in the room
+
     public void TurnOnAllDevices()
     {
         foreach (var device in Devices)
@@ -22,7 +22,7 @@ public class Room
         }
     }
 
-    // Method to turn off all devices in the room
+
     public void TurnOffAllDevices()
     {
         foreach (var device in Devices)
@@ -31,7 +31,7 @@ public class Room
         }
     }
 
-    // Method to report all items in the room and their status
+
     public void ReportAllItems()
     {
         Console.WriteLine($"Items in Room '{Name}':");
@@ -41,7 +41,7 @@ public class Room
         }
     }
 
-    // Method to report all items that are on
+
     public void ReportItemsOn()
     {
         Console.WriteLine($"Items that are on in Room '{Name}':");
@@ -54,7 +54,7 @@ public class Room
         }
     }
 
-    // Method to report item that has been on the longest
+   
     public void ReportLongestOn()
     {
         TimeSpan longestTime = TimeSpan.Zero;
